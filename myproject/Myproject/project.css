@@ -1,0 +1,725 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.head {
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 2px 5px rgb(69, 66, 66);
+    
+}
+.head .logo{
+    width: 25%;
+    height: 100%;
+    padding: 20px 50px;
+    align-items: center;
+    display: flex;
+}
+/*==========================MENU====================*/
+.head .menu{
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+.head .menu ul{
+    display: flex;
+    list-style-type: none;
+}
+.head .menu ul li{
+    
+    margin-right: 30px;
+}
+.head .menu ul li a{
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    text-transform: uppercase;
+    position: relative;
+}
+.menu ul li a::before{
+    position: absolute;
+    content:"";
+    width: 0%;
+    background-color: rgb(255, 0, 0);
+    height: 2px;
+    bottom: -7px;
+    right: 50%;
+    transition: all 0.3s;
+}
+.menu ul li a::after{
+    position: absolute;
+    content:"";
+    width: 0%;
+    background-color: rgb(255, 0, 0);
+    height: 2px;
+    bottom: -7px;
+    left: 50%;
+    transition: all 0.3s;
+}
+.menu ul li a:hover::before{
+    width: 50%;
+    transition: all 0.3s;
+}
+.menu ul li a:hover::after{
+    width: 50%;
+    transition: all 0.3s;
+}
+/*========================ICON===================*/
+.head .icon{
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    padding: 40px;
+}
+.icon ul{
+    display: flex;
+}
+.head .icon ul li{
+    list-style-type: none;
+    margin-left: 30px;
+    position: relative;
+}
+.head .icon ul li a{
+    text-decoration: none;
+    color:  black;
+    font-size: 20px;
+}
+.icon ul li #tage{
+    font-size: 18px;
+    color: rgb(70, 69, 69);
+}
+.icon ul li span{
+    position: absolute;
+    width: 18px;
+    top: -14px;
+    left: 10px;
+    background-color: rgba(20, 19, 19, 0.751);
+    color: white;
+    padding: 0px 5px;
+    clip-path: circle(50% at 50% 50%);
+    /*====================Banner======================*/
+}.body1{
+    width: 100%;
+    height: 100vh;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.body1 .b-left{
+    width: 49%;
+    height: 100%;
+    background-color: aqua;
+    background-image: url(./project1/Picture_Shop/categories/category-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 3rem;
+}
+.b-left h2{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.b-left p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.b-left a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    padding: 3px 0px;
+    border-bottom: 2px solid red;
+    font-weight: bold;
+}
+.body1 .b-right{
+    width: 50%;
+    height: 100%;
+}
+.body1 .b-right .up{
+    width:100%;
+    height: 49%;
+    display: flex;
+    margin-bottom: 14px;
+    justify-content: space-between;
+}
+.up .b1{
+    width: 49%;
+    height: 100%;
+    position: relative;
+}
+.up .b1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.up .b1 .text{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.text h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.text p{
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: gray;
+}
+.text a{
+    color: black;
+    padding: 3px 0px;
+    border-bottom: 2px solid red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.head-body2{
+    width: 90%;
+    height: 70px;
+    background-color:aliceblue;
+    margin: 20px auto;
+    display: flex;
+}
+.head-body2 .title{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.head-body2 .title h2{
+    font-size: 25px;
+    position: relative;
+}
+.head-body2 .title h2::before{ 
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    bottom: -5px;
+}
+.head-body2 .menu{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-body2 .menu ul{
+    display: flex;
+}
+.head-body2 .menu ul li{
+    list-style-type: none;
+    margin-left: 50px;
+    position: relative;
+}
+.head-body2 .menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+ #line::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    bottom: -5px;
+    left: 0;
+}
+.body2{
+    width: 80%;
+    height: 450px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.body2 .item{
+    width: 23%;
+    height: 100%;
+}
+.body2 .item .image{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+
+}
+.body2 .item .image span{
+    position: absolute;
+    width: 50px;
+    background-color: rgb(63, 212, 21);
+    padding: 4px 4px;
+    left: 8px;
+    top: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+.item .image .icon{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: -30%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.5s;  
+}
+.item .image .icon .box i{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background-color: aliceblue;
+    margin-right: 20px;
+    clip-path: circle(50% at 50% 50%);
+    text-align: center;
+    padding: 16px 15px;
+}
+.item:hover .icon{
+    visibility:visible ;
+    bottom: 0;
+    transition: all 0.5s;
+}
+.item .image .icon .box i:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+    background-color: red;
+    color: aliceblue;
+    
+}
+.body2 .item .text{
+    width: 100%;
+    height: 20%;
+    background-color: aliceblue;
+    padding: 15px 0;
+    text-align: center;
+
+}
+.item .text p{
+    font-size:18px ;
+    margin-bottom: 3px;
+}
+.item .text span i{
+    font-size: 10px;
+    margin-bottom: 3px;
+    color: rgb(253, 213, 83);
+}
+.body3{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+    margin: 40px 0px;
+    position:relative;
+}
+.body3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.body3 .text{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.body3 .text .text-box{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 3rem 0px;
+    animation-name: ban-text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+@keyframes ban-text{
+    0%{transform: translateX(0);}
+    50%{transform: translate(50%);}
+    100%{transform: translateX(0);}
+}
+.body3 .text .text-box h3{
+    color: red;
+    margin-bottom: 10px;
+}
+.body3 .text .text-box h1{
+    text-transform: capitalize;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.body3 .text .text-box p{
+    position: relative;
+}
+.body3 .text .text-box p::before{
+    position: absolute;
+    content: "";
+    width: 95px;
+    height: 3px;
+    background-color: red;
+    bottom: -4px;
+}
+.body4{
+    width: 80%;
+    height: 480px;
+    margin: 0 auto;
+    display: flex;
+}
+.body4 .b1{
+    width: 33%;
+    height: 100%;
+}
+ .body4 .b1 .title{
+    width: 100%;
+    height: 20%;
+    padding: 30px 0;
+   
+}
+ .body4 .title h2::before{ 
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    bottom: -2px;
+}
+ .body4 .b1 .title h2{
+    font-size: 25px;
+    position: relative;
+}
+
+.b1 .item1{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 20px;
+    display: flex;
+}
+.b1 .item1 .pic{
+    width: 30%;
+    height: 100%;
+}
+.b1 .item1 .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.b1 .item1 .dis{
+    width: 70%;
+    height: 100%;
+    padding: 10px 40px;
+}
+.b1 .item1 .dis P{
+    font-size: 20PX;
+    margin-bottom: 10PX;
+    color: rgb(97, 95, 95);
+}
+.b1 .item1 .dis .icon{
+    font-size: 10px;
+    color: gold;
+    line-height: 10px;
+	margin-bottom: 10px;
+}
+.b1 .item1 .dis .icon i{
+    margin-right: -2px
+}
+.b1 .item1 .dis h3{
+    font-size: 20px;
+}
+.body4 .b2{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(114, 163, 206);
+}
+.body4 .b3{
+    width: 34%;
+    height: 100%;
+}
+.discountdate{
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    display: flex;
+}
+.discountdate .img{
+    width: 50%;
+    height: 100%;
+}
+.discountdate .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discountdate .dis-date{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(237, 231, 231);
+}
+.dis-date .circle{
+    margin: 40px auto;
+    width: 32%;
+    height: 45%;
+    background-color: aliceblue;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+.dis-date .circle p{
+    font-size: 15px;
+    margin-bottom: 8rem;
+}
+#tagH1{
+    width: 500px;
+    position: absolute;
+    top: 33%;
+    left: -95%;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+.dis-date .hour{
+    font-size: 20px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+ .discountdate h5{
+    width: 73px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-bottom: 3px solid red;
+}
+.payment{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+}
+.payment .box-pay{
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+.payment .box-pay .icon{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-pay .icon i{
+    font-size: 37px;
+}
+.payment .box-pay .text{
+    width: 80%;
+    height: 100%;
+    padding: 25px 0px;
+}
+.instagram{
+    width: 100%;
+    height: 350px;
+    margin: 40px 0px;
+    display: flex;
+}
+.instagram .box{
+    width: 16.66%;
+    height: 100%;
+    position:relative ;
+}
+.instagram .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.instagram .box .ig{
+    width: 100%;
+    height:100%;
+    background-color: rgba(249, 241, 241, 0.756);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease-in 0.2s;
+}
+.ig .div{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.instagram .box:hover .ig{
+    opacity: 1;
+    transition: ease-in 0.2s;
+}
+.foot{
+    width: 100%;
+    height: 300px;
+}
+.foot .head{
+    width: 100%;
+    height: 80%;
+    padding: 0 7rem;
+    display: flex;
+}
+.head .foot1{
+    width: 30%;
+    height: 100%;
+    padding: 20px 10px;
+}
+.foot1 img{
+    margin-bottom: 20px;
+}
+.foot1 p{
+    margin-bottom: 20px;
+    color: rgb(105, 102, 102);
+}
+.head .foot2{
+    width: 20%;
+    height: 100%;
+    padding: 20px 0px;
+}
+.foot2 ul li{
+    list-style-type: none;
+    margin-top: 18px;
+}
+.foot2 ul li a{
+    text-decoration: none;
+    color: rgb(105, 102, 102);
+}
+.head .foot4{
+    width: 30%;
+    height: 100%;
+    padding: 30px 0px;
+    
+}
+.foot4 form{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    margin: 20px 0px 60px 0px;
+}
+.foot4 form input[type="email"]{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 30px;
+    outline: none;
+    border: 0.5px solid rgb(173, 172, 172);
+    font-size: 15px;
+}
+.foot4 form button[type="button"]{
+    width: 120px;
+    padding: 15px 0px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 1%;
+    top: 3%;
+}
+.foot4 span{
+    width: 100px;
+    padding: 13px 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.foot .footer{
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-top: 0.5px solid black;
+}
+/*----------------SHOP----------------------*/
+.link{
+    width: 100%;
+    height: 90px;
+    margin-top: 10px;
+    padding: 30px 100px;
+    
+}
+.link ul {
+    display: flex;
+    
+
+}
+.link ul li{
+    
+    list-style-type: none;
+    font-size: 16px;
+    
+}
+.link ul li a{
+    text-decoration: none;
+    color: black;
+}
+.shopping{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(190, 125, 125);
+    margin: 0 auto;
+    display: flex;
+}
+.shopping .categories{
+    width: 30%;
+    height: 100%;
+    background-color: aliceblue;
+}
+.categories .cate1{
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+}
+.cate1 h2{
+    position: relative;
+}
+.cate1 h2::before{
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 1px;
+    background-color: red;
+    bottom: 0px;
+    left: 0;
+}
+.cate1 ul{
+    display: flex;
+}
+.cate1 ul li{
+    list-style-type: none;
+    padding: 18px 0px;
+    border-bottom: 1px solid rgb(168, 167, 167);
+}
+.cate1 ul li a{
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    margin-right: 13rem;
+    font-size: 20px;
+}
+.shopping .item{
+    width: 70%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+
+
+
+
